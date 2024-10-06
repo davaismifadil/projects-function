@@ -3,7 +3,6 @@
 using namespace std;
 
 double luaslingkaran(double jari){
-//return (jari *jari * 3.14);
 return pow(jari,2)*3.14;
 }
 
