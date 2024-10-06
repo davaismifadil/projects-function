@@ -10,12 +10,11 @@ double luaspersegi(double sisi){
 return pow(sisi,2);
 }
 
-double luasSegitiga(double alas, double tinggi) {
+double luasSegitiga (double alas, double tinggi) {
     return 0.5 * alas * tinggi;
 }
-
-float luasJajarGenjang(float alas, float tinggi) {
-    return alas * tinggi ;
+float luasJajargenjang (float alas, float tinggi) {
+    return alas * tinggi;
 }
 
 double luasTrapesium(double a, double b, double tinggi) {
@@ -26,7 +25,7 @@ double luasBelahKetupat(double diagonal1, double diagonal2) {
     return 0.5 * diagonal1 * diagonal2;
 }
 
-}
+
     
 int main(){
 int jari;
@@ -36,22 +35,20 @@ cin >> jari;
 cout << "hasilnya adalah : " << luaslingkaran(jari) << endl;
 
     double alas, tinggi, luas;
-
-    cout << "Masukkan panjang alas segitiga: ";
+    cout << "Masukkan panjang alas segitiga : " ;
     cin >> alas;
-    cout << "Masukkan tinggi segitiga: ";
-    cin >> tinggi;
+    cout << "Masukkan tinggi segitiga : " ;
+        cin >> tinggi;
+    luas = luasSegitiga (alas, tinggi);
+        cout << "Luas segitiga adalah : " << luas <<endl ;
 
-    luas = luasSegitiga(alas, tinggi);
-    cout << "Luas segitiga adalah: " << luas << endl;
-     
-    cout << "Masukkan panjang alas jajargenjang : ";
-    cin >> alas;
-    cout << "Masukkan tinggi jajar genjang : " ;
-    cin >> tinggi;
-    
-    luas = luasJajarGenjang(alas, tinggi) ;
-    cout << "Luas jajargenjang : " << luas << endl;
+        cout << "Masukkan panjang alas jajar genjang : " ;
+        cin >> alas;
+        cout << "Masukkan tinggi jajar genjang : " ;
+            cin >> tinggi;
+        luas = luasJajargenjang (alas, tinggi) ;
+        cout << " Luas jajar genjang adalah " << luas << endl;
+        
 
     double a, b, tinggii, diagonal1, diagonal2;
 
