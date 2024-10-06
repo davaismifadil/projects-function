@@ -24,12 +24,10 @@ double luasTrapesium(double a, double b, double tinggi) {
 double luasBelahKetupat(double diagonal1, double diagonal2) {
     return 0.5 * diagonal1 * diagonal2;
 }
-
-
     
 int main(){
 int jari;
-cout << "masukkan jari-jari" << endl;
+cout << "masukkan jari-jari lingkaran : " << endl;
 cin >> jari;
 
 cout << "hasilnya adalah : " << luaslingkaran(jari) << endl;
@@ -45,7 +43,7 @@ cout << "hasilnya adalah : " << luaslingkaran(jari) << endl;
         cout << "Masukkan panjang alas jajar genjang : " ;
         cin >> alas;
         cout << "Masukkan tinggi jajar genjang : " ;
-            cin >> tinggi;
+        cin >> tinggi;
         luas = luasJajargenjang (alas, tinggi) ;
         cout << " Luas jajar genjang adalah " << luas << endl;
         
@@ -67,6 +65,6 @@ cout << "hasilnya adalah : " << luaslingkaran(jari) << endl;
 
     double luas_belah_ketupat = luasBelahKetupat(diagonal1, diagonal2);
     cout << "Luas belah ketupat adalah: " << luas_belah_ketupat << endl;
-
+    
 return 0;
 }
